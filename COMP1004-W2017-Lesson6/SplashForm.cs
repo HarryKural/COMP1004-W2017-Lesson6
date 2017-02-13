@@ -19,7 +19,6 @@ namespace COMP1004_W2017_Lesson6
 
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
-
             // 1. Instantiate the next form
             AbilityForm abilityForm = new AbilityForm();
 
@@ -27,11 +26,10 @@ namespace COMP1004_W2017_Lesson6
             abilityForm.PreviousForm = this;
 
             this.SplashFormTimer.Enabled = false;
-            //this.Enabled = false; 1st
+            
             abilityForm.Show();
-            this.Hide();
 
-            //Program.MyCalculatorForm.Show(); 1st
+            this.Hide();
         }
     }
 }
